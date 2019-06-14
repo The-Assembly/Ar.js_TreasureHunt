@@ -30,7 +30,6 @@ Use A-Frame & AR.js to create a Augmented Reality Trasure Hunt using HTML, CSS &
 ```
 **3. Install node**
 ```
-  brew install git
   brew install node
 ```
  *Check node & npm version*
