@@ -16,7 +16,11 @@ Use A-Frame & AR.js to create a Augmented Reality Trasure Hunt using HTML, CSS &
  node -v
  npm –v
 ``` 
-
+ **3. Install obj to gltf converter
+ ```
+    npm install -g obj2gltf
+ ```
+ 
 ### Mac
 **1. Install Xcode from App Store or update to the latest version if already installed** (https://itunes.apple.com/ae/app/xcode/id497799835?mt=12)
 
@@ -35,3 +39,8 @@ Use A-Frame & AR.js to create a Augmented Reality Trasure Hunt using HTML, CSS &
     node -v
     npm -v
  ```
+ **4. Install obj to gltf converter
+ ```
+    npm install -g obj2gltf
+ ```
+ 
