@@ -28,7 +28,6 @@ Use A-Frame & AR.js to create a Augmented Reality Trasure Hunt using HTML, CSS &
 ```
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
-
 **3. Install node**
 ```
   brew install git
@@ -39,7 +38,7 @@ Use A-Frame & AR.js to create a Augmented Reality Trasure Hunt using HTML, CSS &
     node -v
     npm -v
  ```
- **4. Install obj to gltf converter
+**4. Install obj to gltf converter
  ```
     npm install -g obj2gltf
  ```
