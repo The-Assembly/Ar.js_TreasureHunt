@@ -9,7 +9,7 @@ Use A-Frame & AR.js to create a Augmented Reality Trasure Hunt using HTML, CSS &
 ## Installation Guide
 
 ### Windows
-**1. Download Node.js** *(https://nodejs.org/en/)* **(LTS Version Recommended)  and Git**  *(https://git-scm.com/downloads)* <br/>
+**1. Download Node.js** *(https://nodejs.org/en/)* **(LTS Version Recommended)** <br/>
 
 **2. Open Node.js Command Prompt and type to display versions**
 ```
