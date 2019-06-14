@@ -16,7 +16,7 @@ Use A-Frame & AR.js to create a Augmented Reality Trasure Hunt using HTML, CSS &
  node -v
  npm –v
 ``` 
- **3. Install obj to gltf converter
+ **3. Install obj to gltf converter**
  ```
     npm install -g obj2gltf
  ```
