@@ -8,7 +8,7 @@
 <script src="js/userState.js"></script>
 <script src="js/interaction.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
-    <div class='speech-bubble' style="z-index:100000; font-size:50px"></div>
+    <div class='speech-bubble' style="z-index:1; font-size:50px"></div>
 	
   <a-scene embedded arjs cursor="rayOrigin: mouse" accepts-clicks>
 
@@ -21,7 +21,7 @@
   <a-asset-item id="biggie" src="builder-markers/biggie.gltf"></a-asset-item>
 </a-assets>
 
-!-- scale values allow you to adjust the file’s display size, gltf-model=“#your file name“ -->
+<!-- scale values allow you to adjust the file’s display size, gltf-model=“#your file name“ -->
 
     <a-marker id ="pyra-marker" type="pattern" url="builder-markers/pyra.patt">
     <a-entity  rotation="0 180 0" position="0 0 0.5" scale="0.15 0.15 0.15" gltf-model="#pyra"></a-entity>
