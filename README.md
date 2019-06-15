@@ -109,7 +109,7 @@ Then you tell A-Frame that you want arjs to control the camera. For that, you ju
 
 <a-box position='0 0.5 0' scale='0.5 0.5 0.5' rotation='0 0 0' material='color: yellow;'></a-box>
 ```
-### 2.  Using an Image as a Object
+### 2.  Using an Image as an Object
 ```
 <a-sphere>
 
