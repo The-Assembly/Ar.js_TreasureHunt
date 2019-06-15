@@ -41,8 +41,8 @@ To create your own markers, go to *(https://jeromeetienne.github.io/AR.js/three.
 
 Two default markers are – hiro & kanji
 
-![functional diagram](https://github.com/The-Assembly/Ar.js_TreasureHunt/blob/master/hiro.PNG)
-![functional diagram](https://github.com/The-Assembly/Ar.js_TreasureHunt/blob/master/kanji.PNG)
+![functional diagram](https://github.com/The-Assembly/Ar.js_TreasureHunt/blob/master/Preset%20Markers/hiro.PNG)
+![functional diagram](https://github.com/The-Assembly/Ar.js_TreasureHunt/blob/master/Preset%20Markers/kanji.PNG)
 
 
 ## Installation Guide
