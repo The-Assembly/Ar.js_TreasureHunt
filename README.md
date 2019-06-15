@@ -131,7 +131,7 @@ We can also tween values directly for better performance versus going through.se
 
 ### 3. Treasure Hunt <br/>
 
-Adding Markers & 3D models to the A-Frame HTML Template
+#### Adding Markers & 3D models to the A-Frame HTML Template
 
 1. Add the src (<a-asset-item>) of the 3D asset to the <a-assets> node of the template. <br/>
 **Using .obj file** <br/> 
@@ -156,4 +156,46 @@ Adding Markers & 3D models to the A-Frame HTML Template
 <a-entity  rotation="90 -45 45" position="0 0 0" scale="1 1 1" gltf-model="#pyra"></a-entity> 
 ```
  
- 
+#### Implementing Speech Bubble Dialogue Interaction
+Tap functionality by defining a new component called  accepts-clicks:
+```
+AFRAME.registerComponent('accepts-clicks', {
+  init: function() {
+    this.el.addEventListener('touchend', handleClickEvent);
+    this.el.addEventListener('click', handleClickEvent);
+  }
+});
+```
+and then adding it as an attribute to <a-scene>:
+```
+<a-scene embedded arjs accepts-clicks>
+```
+Based on our design of the treasure hunt, only one Marker would be visible on the screen at once, so all we needed to do was loop through the Builders every time the screen was tapped and use the dialogue of the Builder whose object3D.visible is true.
+```
+function handleClickEvent() {
+  for (var i = 0; i < builders.length; i++) {
+    var builder = builders[i];
+    var builderMarker = document.querySelector("#" + builder.name + "-marker");
+    if (builderMarker && builderMarker.object3D.visible) {
+      if (searchForBuilderTool(builder)) {
+        toggleSpeechBubble(builder.successDialogue);
+      } else {
+        toggleSpeechBubble(builder.dialogue);
+      }
+      break;
+    }
+  }
+}
+```
+Defined a “tick” handler (which gets called for every render loop of A-Frame).
+```
+AFRAME.registerComponent('accepts-clicks', {
+  init: function() {
+    this.el.addEventListener('touchend', handleClickEvent);
+    this.el.addEventListener('click', handleClickEvent);
+  },
+  tick: function() {
+    hideSpeechBubbleIfNoMarker();
+  }
+});
+```                                      
