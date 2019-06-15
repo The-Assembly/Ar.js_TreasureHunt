@@ -199,3 +199,19 @@ AFRAME.registerComponent('accepts-clicks', {
   }
 });
 ```                                      
+The function hideSpeechBubbleIfNoMarker() uses a similar test with  object3D.visible to determine if the speech bubble should be hidden. If all Builders are hidden, also hide the speech bubble, but if any Builder is visible, keep the speech bubble.
+```
+function hideSpeechBubbleIfNoMarker() {
+  var shouldHide = true;
+  for (var i = 0; i < builders.length; i++) {
+    var builderMarker = document.querySelector("#" + builders[i].name + "-marker");
+    if (builderMarker && builderMarker.object3D.visible) {
+      shouldHide = false;
+      break;
+    }
+  }
+  // hide speech bubble
+};
+```
+#### Keeping Track of Player Inventory
+ 
