@@ -106,8 +106,9 @@ To include AR.js, you need to include aframe-ar.js. Then you initialize ar.js in
 <a-marker-camera preset='hiro'></a-marker-camera>
 ```
 ### 1. Default Objects
+```
 <a-box>/<a-triangle>/<a-ring>/<a-sphere>/<a-tetrahedron>/<a-cylinder>/<a-sphere>
-``` 
+
 <a-box position='0 0.5 0' scale='0.5 0.5 0.5' rotation='0 0 0' material='color: yellow;'></a-box>
 ```
 ### 2.  
