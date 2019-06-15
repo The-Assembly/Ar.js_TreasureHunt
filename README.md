@@ -30,10 +30,9 @@ acting as a port of AR Toolkit, while leveraging other packages like a-frame and
 An important feature of AR.js is the possibility to use custom markers, the default type is ‘pattern’. 
 
 AR.js uses artoolkit, and so it is marker based. artoolkit is a software with years of experience doing augmented reality. 
-It supports a wide range of markers: multiple types of markers pattern/barcode multiple independent markers at the same time, or multiple markers acting as a single marker up to you to choose.
+It supports a wide range of markers: multiple types of markers pattern/barcode multiple independent markers at the same time, or multiple markers acting as a single marker, up to you to choose.
 
-Criteria for creating your own marker <br/>
-
+Criteria for creating your own marker - <br/>
 •	They must be square in shape. <br/>
 •	They cannot have white/transparent areas, only black and light grey (e.g. #F0F0F0) <br/>
 •	They have to contain simple text, like one letter, a number, or a symbol. <br/>
