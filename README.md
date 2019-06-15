@@ -14,13 +14,12 @@ This API is designed with the following goals in mind:
 •	Poll the device’s position and orientation.
 •	Display imagery on the device at the appropriate frame rate.
 WebVR makes it possible to experience VR in your browser. The goal is to make it easier for everyone to get into VR experiences, no matter what device you have.
-https://webvr.info/
+*(https://webvr.info/)*
 
 ## What is A-Frame?
  
 A-Frame is an open-source web framework for building virtual reality (VR) experiences. It is maintained by developers from Supermedium (Diego Marcos, Kevin Ngo) and Google (Don McCurdy). A-Frame is an entity component system framework for Three.js where developers can create 3D and WebVR scenes using HTML. HTML provides a familiar authoring tool for web developers and designers while incorporating a popular game development pattern used by engines such as Unity.
-
-https://aframe.io/
+*(https://aframe.io/)*
 
 ## What is AR.js?
 
@@ -32,7 +31,16 @@ An important feature of AR.js is the possibility to use custom markers, the defa
 
 AR.js uses artoolkit, and so it is marker based. artoolkit is a software with years of experience doing augmented reality. 
 It supports a wide range of markers: multiple types of markers pattern/barcode multiple independent markers at the same time, or multiple markers acting as a single marker up to you to choose.
-2 Default markers are – hiro & kanji
+
+Criteria for creating your own marker
+
+•	They must be square in shape.
+•	They cannot have white/transparent areas, only black and light grey (e.g. #F0F0F0)
+•	They have to contain simple text, like one letter, a number, or a symbol.
+
+To create your own markers, go to *(https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html)*
+
+Two default markers are – hiro & kanji
 
 ![functional diagram](https://github.com/The-Assembly/Ar.js_TreasureHunt/blob/master/hiro.PNG)
 ![functional diagram](https://github.com/The-Assembly/Ar.js_TreasureHunt/blob/master/kanji.PNG)
@@ -54,9 +62,9 @@ It supports a wide range of markers: multiple types of markers pattern/barcode m
  ```
  
 ### Mac
-**1. Install Xcode from App Store or update to the latest version if already installed** (https://itunes.apple.com/ae/app/xcode/id497799835?mt=12)
+**1. Install Xcode from App Store or update to the latest version if already installed** *(https://itunes.apple.com/ae/app/xcode/id497799835?mt=12)*
 
-**2. Open Terminal and Install Homebrew (https://brew.sh) using the following command**
+**2. Open Terminal and Install Homebrew** *(https://brew.sh)* **using the following command**
 ```
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
