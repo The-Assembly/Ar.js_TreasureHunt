@@ -8,11 +8,11 @@ Use A-Frame & AR.js to create a Augmented Reality Trasure Hunt using HTML, CSS &
 
 ## What is WebVR?
 WebVR is an experimental JavaScript application programming interface (API) that provides support for virtual reality devices, such as the HTC Vive, Oculus Rift, Google Cardboard or OSVR in a web browser. 
-This API is designed with the following goals in mind: 
-•	Detect available Virtual Reality devices.
-•	Query the devices capabilities.
-•	Poll the device’s position and orientation.
-•	Display imagery on the device at the appropriate frame rate.
+This API is designed with the following goals in mind: <br/>
+•	Detect available Virtual Reality devices. <br/>
+•	Query the devices capabilities. <br/>
+•	Poll the device’s position and orientation. <br/>
+•	Display imagery on the device at the appropriate frame rate. <br/>
 WebVR makes it possible to experience VR in your browser. The goal is to make it easier for everyone to get into VR experiences, no matter what device you have.
 *(https://webvr.info/)*
 
@@ -32,11 +32,11 @@ An important feature of AR.js is the possibility to use custom markers, the defa
 AR.js uses artoolkit, and so it is marker based. artoolkit is a software with years of experience doing augmented reality. 
 It supports a wide range of markers: multiple types of markers pattern/barcode multiple independent markers at the same time, or multiple markers acting as a single marker up to you to choose.
 
-Criteria for creating your own marker
+Criteria for creating your own marker <br/>
 
-•	They must be square in shape.
-•	They cannot have white/transparent areas, only black and light grey (e.g. #F0F0F0)
-•	They have to contain simple text, like one letter, a number, or a symbol.
+•	They must be square in shape. <br/>
+•	They cannot have white/transparent areas, only black and light grey (e.g. #F0F0F0) <br/>
+•	They have to contain simple text, like one letter, a number, or a symbol. <br/>
 
 To create your own markers, go to *(https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html)*
 
