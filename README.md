@@ -81,3 +81,22 @@ Two default markers are – hiro & kanji
     npm install -g obj2gltf
  ```
  
+## Code
+### Include the JS Build
+To include A-Frame & AR.js in an HTML file, we drop a <script> tag pointing to the CDN build:
+```
+<head>
+  <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+  <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.1/aframe/build/aframe-ar.js"></script>
+</head>
+```
+
+To include AR.js, you need to include aframe-ar.js. Then you initialize ar.js in <a-scene>.
+```
+<a-scene embedded arjs>
+```
+ 
+To include AR.js, you need to include aframe-ar.js. Then you initialize ar.js in <a-scene>.
+```
+<a-scene embedded arjs>
+```
