@@ -134,11 +134,11 @@ We can also tween values directly for better performance versus going through.se
 #### Adding Markers & 3D models to the A-Frame HTML Template
 
 1. Add the src (<a-asset-item>) of the 3D asset to the <a-assets> node of the template. <br/>
-**Using .obj file** <br/> 
+*Using .obj file* <br/> 
 ```
 <a-asset-item id="pyra-obj" src="builder-models/Pyra.obj"></a-asset-item>
 ```
-**Using .gltf file** <br/> 
+*Using .gltf file* <br/> 
 ```
 <a-asset-item id="pyra" src="builder-markers/Pyra.gltf"></a-asset-item>
 ```
@@ -147,11 +147,11 @@ We can also tween values directly for better performance versus going through.se
 <a-marker id ="pyra-marker" type="pattern" url="builder-markers/pyra.patt">
 ```
 3. In order to “link” the Marker and the 3D model, add an <a-entity> node with a reference to the 3D model inside the <a-marker> node created in the previous step. <br/> 
-**Using .obj file** <br/> 
+*Using .obj file* <br/> 
 ```
 <a-entity id="pyra" obj-model="obj: #pyra-obj;" material="color: green" rotation="0 180 0" position="0 0 0.5" scale="0.15 0.15 0.15"></a-entity>
 ```
- **Using .gltf file** <br/> 
+*Using .gltf file* <br/> 
 ```
 <a-entity  rotation="90 -45 45" position="0 0 0" scale="1 1 1" gltf-model="#pyra"></a-entity> 
 ```
