@@ -117,7 +117,7 @@ To include AR.js, you need to include aframe-ar.js. Then you initialize ar.js in
 
 <a-box position='0 0.5 0' scale='0.5 0.5 0.5' rotation='0 0 0' material='color: yellow;' material='opacity: 0.5;'></a-box>
 ```
-Animation <br/>
+**Animation** <br/>
 The animation component lets us animate and tween values including: <br/>
 •	Component values (e.g., position, visible) <br/>
 •	Component property values (e.g., light.intensity) <br/>
@@ -126,4 +126,5 @@ We can also tween values directly for better performance versus going through.se
 •	Directly within a component (e.g., components.material.material.color, components.text.material.uniforms.opacity.value)
 ```
 <a-animation attribute="scale" dur="2000" from= "0 0 0" to="5 5 5" direction='alternate-reverse' easing= "ease-in-out-circ"  repeat="indefinite"></a-animation>
-
+```
+*(https://aframe.io/docs/0.9.0/components/animation.html)*
