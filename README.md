@@ -214,4 +214,22 @@ function hideSpeechBubbleIfNoMarker() {
 };
 ```
 #### Keeping Track of Player Inventory
- 
+The final piece to our treasure hunt was keeping track of which treasures the player had found. We defined several classes: Builder, Tool (aka treasures), and UserState.
+
+The Builder class had fields for name, tool, initial dialogue, and alternate dialogue for after the user has found the treasure. The “tool” field was the treasure associated with that Builder. The Tool class had fields for name and dialogue. And finally, UserState had an array containing the inventory of treasures that the player had clicked on.
+Every time the player clicked a tool, that tool would be added to the UserState. And every time the player clicked a Builder, we would check whether the tool associated with that Builder was in the UserState. If so, we would show the alternate dialogue.
+```
+function UserState() {
+    this.tools = [];
+}
+
+UserState.prototype.addTool = function(tool) {
+    this.tools.push(tool);
+}
+
+UserState.prototype.hasBuilderTool = function(builder) {
+    return builder.tool && this.tools.includes(builder.tool.name);
+}
+
+var userState = new UserState();
+```
