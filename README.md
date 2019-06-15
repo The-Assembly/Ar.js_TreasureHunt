@@ -34,6 +34,9 @@ AR.js uses artoolkit, and so it is marker based. artoolkit is a software with ye
 It supports a wide range of markers: multiple types of markers pattern/barcode multiple independent markers at the same time, or multiple markers acting as a single marker up to you to choose.
 2 Default markers are – hiro & kanji
 
+![functional diagram](https://github.com/The-Assembly/Ar.js_TreasureHunt/blob/master/hiro.PNG)
+![functional diagram](https://github.com/The-Assembly/Ar.js_TreasureHunt/blob/master/kanji.PNG)
+
 
 ## Installation Guide
 
