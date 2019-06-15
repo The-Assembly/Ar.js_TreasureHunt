@@ -99,13 +99,7 @@ To include AR.js, you need to include aframe-ar.js. Then you initialize ar.js in
 ```
 <a-scene embedded arjs>
 ```
- 
-To include AR.js, you need to include aframe-ar.js. Then you initialize ar.js in <a-scene>.
-```
-<a-scene embedded arjs>
-```
- 
- Then you tell A-Frame that you want arjs to control the camera. For that, you just add
+Then you tell A-Frame that you want arjs to control the camera. For that, you just add
 ```
 <a-marker-camera preset='hiro'></a-marker-camera>
 ```
