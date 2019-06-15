@@ -80,6 +80,10 @@ Two default markers are – hiro & kanji
  ```
     npm install -g obj2gltf
  ```
+ Convert a .obj to .gltf
+ ```
+ obj2gltf -i Pyra.obj -o Pyra.gltf
+```
  
 ## Code
 ### Include the JS Build
